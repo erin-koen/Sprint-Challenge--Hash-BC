@@ -10,7 +10,19 @@ def get_indices_of_item_weights(weights, length, limit):
     ht = HashTable(16)
 
     """
-    YOUR CODE HERE
+    takes in three arguments:
+    weights - a list of integers
+    length - the length of the list
+    limit - the integer to solve for 
+
+    loop through weights and add them to the hash table. weight = key, value = boolean
+    look through weights and check, is limit - weight[i] in the ht?
+
+    ht has linked list functionality so will need to traverse the entries at each index to confirm the above
+
+    What to return? Question reads as - return the first pair that satisfies these conditions, in descending order
+    
+
     """
 
     return None
