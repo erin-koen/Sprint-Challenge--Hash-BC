@@ -25,9 +25,7 @@ def proof_of_work(last_proof):
     print("Searching for next proof")
     proof = 0
     while valid_proof(last_proof, proof) is False:
-        random_int = randint(1,10)
-        if random_int >= 5:
-            proof -=  random_int
+        random_int = randint(1,7)
         proof+= random_int
     
 
