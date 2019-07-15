@@ -35,6 +35,8 @@ def hash(x, max):
 # '''
 def hash_table_insert(hash_table, key, value):
     index = hash(key, len(hash_table.storage))
+    print('hashed key (index): ', index)
+   
 
     current_pair = hash_table.storage[index]
     last_pair = None
@@ -48,7 +50,9 @@ def hash_table_insert(hash_table, key, value):
     else:
         new_pair = LinkedPair(key, value)
         new_pair.next = hash_table.storage[index]
+
         hash_table.storage[index] = new_pair
+        print(hash_table.storage[index])
 
 
 # '''
